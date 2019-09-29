@@ -19,6 +19,10 @@ app.get('/', (req, res) => {
     res.send('Hello, world!')
 })
 
+app.get('/api/documents', (req, res) => {
+    res.send('Hello, documents!')
+})
+
 app.use(function errorHandler(error, req, res, next) {
     let response
     if (NODE_ENV === 'production') {
