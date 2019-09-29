@@ -2,14 +2,14 @@ BEGIN;
 
 TRUNCATE mdndocs, reactdocs, documents RESTART IDENTITY CASCADE;
 
-INSERT INTO mdndocs (id, imagelink, pagelink)
+INSERT INTO mdndocs (id, mdnimagelink, mdnpagelink)
     VALUES
         ('1', 'firstImageLink', 'firstPageLink'),
         ('2', 'secondImageLink', 'secondPageLink'),
         ('3', 'thirdImageLink', 'thirdPageLink'),
         ('4', 'fourthImageLink', 'fourthPageLink');
 
-INSERT INTO reactdocs (id, imagelink, pagelink)
+INSERT INTO reactdocs (id, reactimagelink, reactpagelink)
     VALUES
         ('1', 'firstImageLink', 'firstPageLink'),
         ('2', 'secondImageLink', 'secondPageLink'),

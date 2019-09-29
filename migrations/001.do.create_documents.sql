@@ -5,14 +5,14 @@ SET TIME ZONE 'America/Chicago';
 
 CREATE TABLE mdndocs (
     id VARCHAR PRIMARY KEY,
-    imagelink VARCHAR NOT NULL,
-    pagelink VARCHAR NOT NULL
+    mdnimagelink VARCHAR NOT NULL,
+    mdnpagelink VARCHAR NOT NULL
 );
 
 CREATE TABLE reactdocs (
     id VARCHAR PRIMARY KEY,
-    imagelink VARCHAR NOT NULL,
-    pagelink VARCHAR NOT NULL
+    reactimagelink VARCHAR NOT NULL,
+    reactpagelink VARCHAR NOT NULL
 );
 
 CREATE TABLE documents (
