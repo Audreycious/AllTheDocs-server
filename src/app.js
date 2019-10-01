@@ -5,7 +5,7 @@ const cors = require('cors')
 const helmet = require('helmet')
 const { NODE_ENV } = require('./config')
 const documentsRouter = require('./documents/documentsRouter')
-
+const dbService = require('../services/database-service')
 
 const app = express()
 
@@ -18,7 +18,11 @@ app.use(helmet())
 app.use(cors())
 
 app.get('/', (req, res) => {
-    res.send('Hello, world!')
+    //res.send('Hello, world!')
+    let un = req.UserName;
+    let pw = req.Password
+   console.log(dbService.AddNewUser(un,pw));
+
 })
 
 app.use('/api/documents', documentsRouter)
