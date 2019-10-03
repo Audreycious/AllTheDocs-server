@@ -1,6 +1,6 @@
 const express = require('express')
 const signupRouter = express.Router()
-const SignupService = require('./signupService')
+const SignupService = require('./SignupService')
 const bodyParser = express.json()
 const logger = require('../logger')
 const uuid = require('uuid/v4')
@@ -14,7 +14,7 @@ signupRouter
         let knexInstance = req.app.get('db')
         SignupService.getUsers(knexInstance)
             .then(users => {
-                logger.info(users)
+                logger.info(`${users} loggered in signupRouter 16`)
                 let usernameAlreadyExists = !!users.find(user => user.username === username)
                 if (usernameAlreadyExists) {
                     logger.error(`returned at first check`)
@@ -24,7 +24,7 @@ signupRouter
                 let userInfo = { id, username, password }
                 logger.info(userInfo)
                 SignupService.insertUser(knexInstance, userInfo)
-                    .then(user => {
+                    .then((user) => {
                         res.status(201).send(user)
                     })
             })

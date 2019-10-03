@@ -1,3 +1,5 @@
+const logger = require('../logger')
+
 
 const SignupService = {
     getUsers(knex) {
@@ -5,6 +7,7 @@ const SignupService = {
             .from('users')
             .select('*')
             .then(users => {
+                logger.info(users)
                 return users
             })
     },
