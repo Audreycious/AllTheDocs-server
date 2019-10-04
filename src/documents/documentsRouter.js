@@ -16,15 +16,15 @@ documentsRouter
             })
     })
     .post(bodyParser, (req, res, next) => {
-        let { searchQuery } = req.body
-        logger.info(searchQuery)
+        let { searchTerm } = req.body
+        logger.info(searchTerm)
         let knexInstance = req.app.get('db')
         knexInstance
             .from('documents')
             .select('term', 'mdndocs.mdnimagelink', 'mdndocs.mdnpagelink', 'reactdocs.reactimagelink', 'reactdocs.reactpagelink')
             .join('mdndocs', 'fkmdndocs' , '=', 'mdndocs.id')
             .join('reactdocs', 'fkreactdocs' , '=', 'reactdocs.id')
-            .where('term', 'like', `%${searchQuery}%`)
+            .where('term', 'like', `%${searchTerm}%`)
             .then(rows => {
                 res.status(200).json(rows)
             })

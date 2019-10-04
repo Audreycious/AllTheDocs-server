@@ -3,23 +3,23 @@ function makeMDNDocsArray() {
     return [
         {
             id: '1', 
-            imagelink: 'firstImageLink', 
-            pagelink: 'firstPageLink'
+            mdnimagelink: 'firstImageLink', 
+            mdnpagelink: 'firstPageLink'
         },
         {
             id: '2', 
-            imagelink: 'secondImageLink', 
-            pagelink: 'secondPageLink'
+            mdnimagelink: 'secondImageLink', 
+            mdnpagelink: 'secondPageLink'
         },
         {
             id: '3', 
-            imagelink: 'thirdImageLink', 
-            pagelink: 'thirdPageLink'
+            mdnimagelink: 'thirdImageLink', 
+            mdnpagelink: 'thirdPageLink'
         },
         {
             id: '4', 
-            imagelink: 'fourthImageLink', 
-            pagelink: 'fourthPageLink'
+            mdnimagelink: 'fourthImageLink', 
+            mdnpagelink: 'fourthPageLink'
         }
     ]
 }
@@ -28,23 +28,23 @@ function makeReactDocsArray() {
     return [
         {
             id: '1', 
-            imagelink: 'firstImageLink', 
-            pagelink: 'firstPageLink'
+            reactimagelink: 'firstImageLink', 
+            reactpagelink: 'firstPageLink'
         },
         {
             id: '2', 
-            imagelink: 'secondImageLink', 
-            pagelink: 'secondPageLink'
+            reactimagelink: 'secondImageLink', 
+            reactpagelink: 'secondPageLink'
         },
         {
             id: '3', 
-            imagelink: 'thirdImageLink', 
-            pagelink: 'thirdPageLink'
+            reactimagelink: 'thirdImageLink', 
+            reactpagelink: 'thirdPageLink'
         },
         {
             id: '4', 
-            imagelink: 'fourthImageLink', 
-            pagelink: 'fourthPageLink'
+            reactimagelink: 'fourthImageLink', 
+            reactpagelink: 'fourthPageLink'
         }
     ]
 }

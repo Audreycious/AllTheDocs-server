@@ -1,5 +1,6 @@
 const { expect } = require('chai')
 const supertest = require('supertest')
+const logger = require('../src/logger')
 const app = require('../src/app')
 const knex = require('knex')
 const { makeMDNDocsArray, makeReactDocsArray, makeDocsArray } = require('./allthedocs.fixtures')
@@ -77,18 +78,25 @@ describe('AllTheDocs endpoints', () => {
                         searchArr.push(entry)
                     }
                 })  
+                logger.info(searchArr)
                 it('responds with 200 and an array of filtered test documents', () => {
                     return supertest(app)
                         .post('/api/documents')
                         .send({ searchTerm: searchTerm})
-                        .expect(200, searchArr)
+                        .expect(200, [{
+                                mdnimagelink: "firstImageLink",
+                                mdnpagelink: "firstPageLink",
+                                reactimagelink: "firstImageLink",
+                                reactpagelink: "firstPageLink",
+                                term: "fetch",
+                               }])
                 })
             })
 
         })
     })
 
-    describe.only('/api/signup endpoints', () => {
+    describe('/api/signup endpoints', () => {
         context('POST', () => {
             let seedUser = {
                 id: 'SeedId',
@@ -96,6 +104,7 @@ describe('AllTheDocs endpoints', () => {
                 password: 'SeedPassword'
             }
             let testUser = {
+                id: '1',
                 username: 'Audrey',
                 password: 'Audrey'
             }
@@ -108,9 +117,8 @@ describe('AllTheDocs endpoints', () => {
                 return supertest(app)
                     .post(`/api/signup`)
                     .send(testUser)
-                    .expect(201)
+                    .expect(201, [testUser])
             })  
         })
-    });
-    
+    })
 })

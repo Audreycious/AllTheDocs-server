@@ -8,35 +8,40 @@ const uuid = require('uuid/v4')
 signupRouter
     .route('/')
     .post(bodyParser, (req, res, next) => {
-        let { username, password } = req.body
-        logger.info(username)
-        logger.info(password)
+        let { id, username, password } = req.body
+        logger.info(req.body)
         let knexInstance = req.app.get('db')
-
+        if (!id) {
+            id = uuid()
+        }
         let getUsers = async () => {
             return knexInstance
-                .insert({id: '1', username: 'somename', password: 'password'})
-                .into('users')
-                .then(() => {
-                    return knexInstance
-                        .select('*')
-                        .from('users')
-                        .then(users => {
-                            logger.info(users)
-                            return users
-                        })
+                .select('*')
+                .from('users')
+                .then(users => {
+                    return users
                 })
+        }
+            
+        getUsers().then(users => {   
+            let usernameAlreadyExists = users.find(user => user.username === username)
+            if (!!usernameAlreadyExists !== false) {
+                logger.error(usernameAlreadyExists)
+                return res.status(400).send({error: `Username already exists`})
             }
-        getUsers().then(users => {
-            logger.info(users)
-            return users
-        }).then(users => {
-            res.status(201).send(users)
-            next()
+            if (!id) {
+                id = uuid()
+            }
+            let userInfo = { id, username, password }
+            return knexInstance
+                .insert(userInfo)
+                .into('users')
+                .returning('*')
+                .then(user => {
+                    return res.status(201).send(user)
+                })       
         })
-
-        
-        
+    })
         
 
         // SignupService.getUsers(knexInstance)
@@ -58,9 +63,5 @@ signupRouter
         //         next()
         //     })
         //     .catch(next())
-
-    })
-
-
 
 module.exports = signupRouter
