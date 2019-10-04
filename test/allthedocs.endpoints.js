@@ -104,11 +104,11 @@ describe('AllTheDocs endpoints', () => {
                     .into('users')
                     .insert(seedUser)
             })
-            it('responds with 201 and the user info', () => {
+            it('responds with 201', () => {
                 return supertest(app)
                     .post(`/api/signup`)
                     .send(testUser)
-                    .expect(201, testUser)
+                    .expect(201)
             })  
         })
     });
