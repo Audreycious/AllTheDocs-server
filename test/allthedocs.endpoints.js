@@ -19,11 +19,11 @@ describe('AllTheDocs endpoints', () => {
         return db.raw("SET timezone to 'America/Chicago'")
     })
     before('clean the table', () => {
-        return db.raw('TRUNCATE documents, mdndocs, reactdocs RESTART IDENTITY CASCADE') 
+        return db.raw('TRUNCATE documents, mdndocs, reactdocs, users RESTART IDENTITY CASCADE') 
     })
 
     afterEach('cleanup', () => {
-        return db.raw('TRUNCATE documents, mdndocs, reactdocs RESTART IDENTITY CASCADE')
+        return db.raw('TRUNCATE documents, mdndocs, reactdocs, users RESTART IDENTITY CASCADE')
     })
 
     after('disconnect from db', () => db.destroy())
@@ -86,9 +86,31 @@ describe('AllTheDocs endpoints', () => {
             })
 
         })
-        
-        
-
-        
     })
+
+    describe.only('/api/signup endpoints', () => {
+        context('POST', () => {
+            let seedUser = {
+                id: 'SeedId',
+                username: 'SeedUser',
+                password: 'SeedPassword'
+            }
+            let testUser = {
+                username: 'Audrey',
+                password: 'Audrey'
+            }
+            beforeEach('insert a seedUser', () => {
+                return db
+                    .into('users')
+                    .insert(seedUser)
+            })
+            it('responds with 201 and the user info', () => {
+                return supertest(app)
+                    .post(`/api/signup`)
+                    .send(testUser)
+                    .expect(201, testUser)
+            })  
+        })
+    });
+    
 })
