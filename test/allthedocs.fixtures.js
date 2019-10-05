@@ -78,9 +78,71 @@ function makeDocsArray() {
     ]
 }
 
+function makeUsersArray() {
+    return [
+        {
+            id: '1',
+            username: 'First',
+            password: "first"
+        },
+        {
+            id: '2',
+            username: 'Second',
+            password: "second"
+        },
+        {
+            id: '3',
+            username: 'Third',
+            password: "third"
+        },
+        {
+            id: '4',
+            username: 'Fourth',
+            password: "fourth"
+        },
+        {
+            id: '5',
+            username: 'Fifth',
+            password: "fifth"
+        },
+    ]
+}
+
+function makeUserHistory() {
+    return [
+        {
+            id: '1',
+            fkuserid: '1',
+            searchname: "fetch"
+        },
+        {
+            id: '2',
+            fkuserid: '1',
+            searchname: "parseInt()"
+        },
+        {
+            id: '3',
+            fkuserid: '2',
+            searchname: "push()"
+        },
+        {
+            id: '4',
+            fkuserid: '3',
+            searchname: "toString()"
+        },
+        {
+            id: '5',
+            fkuserid: '3',
+            searchname: "val()"
+        },
+    ]
+}
+
 
 module.exports = {
     makeMDNDocsArray,
     makeReactDocsArray,
-    makeDocsArray
+    makeDocsArray,
+    makeUsersArray,
+    makeUserHistory,
 }

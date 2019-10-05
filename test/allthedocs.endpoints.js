@@ -3,7 +3,7 @@ const supertest = require('supertest')
 const logger = require('../src/logger')
 const app = require('../src/app')
 const knex = require('knex')
-const { makeMDNDocsArray, makeReactDocsArray, makeDocsArray } = require('./allthedocs.fixtures')
+const { makeMDNDocsArray, makeReactDocsArray, makeDocsArray, makeUsersArray, makeUserHistory } = require('./allthedocs.fixtures')
 
 
 describe('AllTheDocs endpoints', () => {
@@ -121,4 +121,31 @@ describe('AllTheDocs endpoints', () => {
             })  
         })
     })
+
+    describe.only('/api/login endpoint', () => {
+        context('POST', () => {
+            let seedUsers = makeUsersArray()
+            let seedUserHistory = makeUserHistory()
+            let testUser = seedUsers[0]
+            let whatToExpect = {user: testUser, userSearchHistory: [seedUserHistory[0], seedUserHistory[1]]}
+            beforeEach('insert seedUsers', () => {
+                return db
+                    .into('users')
+                    .insert(seedUsers)
+                    .then(() => {
+                        return db
+                            .into('userhistory')
+                            .insert(seedUserHistory)
+                    })
+            })
+            it('returns 200 and an object with the testUser and its search history', () => {
+                return supertest(app)
+                    .post('/api/login')
+                    .send(testUser)
+                    .expect(200, whatToExpect)
+            });
+            
+        })
+    });
+    
 })

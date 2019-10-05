@@ -6,6 +6,7 @@ const helmet = require('helmet')
 const { NODE_ENV } = require('./config')
 const documentsRouter = require('./documents/documentsRouter')
 const signupRouter = require('./signup/signupRouter')
+const loginRouter = require('./login/loginRouter')
 
 
 const app = express()
@@ -25,6 +26,8 @@ app.get('/', (req, res) => {
 app.use('/api/documents', documentsRouter)
 
 app.use('/api/signup', signupRouter)
+
+app.use('/api/login', loginRouter)
 
 app.use(function errorHandler(error, req, res, next) {
     let response
