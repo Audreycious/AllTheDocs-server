@@ -3,8 +3,8 @@ function makeMDNDocsArray() {
     return [
         {
             id: '1', 
-            mdnimagelink: 'firstImageLink', 
-            mdnpagelink: 'firstPageLink'
+            mdnimagelink: 'https://i.imgur.com/ESNEOFg.png', 
+            mdnpagelink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat'
         },
         {
             id: '2', 
@@ -53,7 +53,7 @@ function makeDocsArray() {
     return [
         {
             id: '1',
-            term: 'fetch', 
+            term: 'concat()', 
             fkmdndocs: '1', 
             fkreactdocs: '1'
         },
@@ -71,7 +71,7 @@ function makeDocsArray() {
         },
         {
             id: '4', 
-            term: 'map', 
+            term: 'fetch', 
             fkmdndocs: '4', 
             fkreactdocs: '4'
         }

@@ -90,10 +90,10 @@ describe('AllTheDocs endpoints', () => {
                         .post('/api/documents')
                         .send({ username: testUsers[0].username, searchTerm: searchTerm})
                         .expect(200, [{
-                                mdnimagelink: "firstImageLink",
-                                mdnpagelink: "firstPageLink",
-                                reactimagelink: "firstImageLink",
-                                reactpagelink: "firstPageLink",
+                                mdnimagelink: "fourthImageLink",
+                                mdnpagelink: "fourthPageLink",
+                                reactimagelink: "fourthImageLink",
+                                reactpagelink: "fourthPageLink",
                                 term: "fetch",
                                }])
                 })
