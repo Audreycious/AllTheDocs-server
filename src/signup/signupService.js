@@ -1,21 +1,26 @@
+const logger = require('../logger')
+
 
 const SignupService = {
     getUsers(knex) {
-        knex
+        let users = knex
             .from('users')
             .select('*')
-            .then(users => {
-                return users
+            .then(usersArr => {
+                logger.info(usersArr)
+                return usersArr
             })
+        return users
     },
     insertUser(knex, userInfo) {
-        knex
+        let user = knex
             .insert(userInfo)
             .returning('*')
             .into('users')
-            .then(user => {
-                return user
+            .then(userArr => {
+                return userArr
             })
+        return user
     }
 }
 
