@@ -5,7 +5,6 @@ const cors = require('cors')
 const helmet = require('helmet')
 const { NODE_ENV } = require('./config')
 const documentsRouter = require('./documents/documentsRouter')
-const dbService = require('../services/database-service')
 const signupRouter = require('./signup/signupRouter')
 
 
