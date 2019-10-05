@@ -36,6 +36,9 @@ loginRouter
             if (user === null) {
                 return res.status(400).send({error: `Username not found, please signup`})
             }
+            if (!(user.password.toLowerCase() === password.toLowerCase())) {
+                return res.status(401).send({error: `Password incorrect`}) 
+            }
             return findSearchHistory(user).then(userSearchHistory => {
                 let userPackage = { user, userSearchHistory }
                 logger.info(userPackage)
