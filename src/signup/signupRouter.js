@@ -1,6 +1,5 @@
 const express = require('express')
 const signupRouter = express.Router()
-const SignupService = require('./SignupService')
 const bodyParser = express.json()
 const logger = require('../logger')
 const uuid = require('uuid/v4')
