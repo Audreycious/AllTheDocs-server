@@ -1,7 +1,7 @@
 DROP TABLE IF EXISTS users;
 
 CREATE TABLE users(
-    id VARCHAR NOT NULL,
+    id VARCHAR PRIMARY KEY,
     username VARCHAR NOT NULL,
     password VARCHAR NOT NULL
 );

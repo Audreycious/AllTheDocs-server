@@ -3,8 +3,8 @@ function makeMDNDocsArray() {
     return [
         {
             id: '1', 
-            mdnimagelink: 'firstImageLink', 
-            mdnpagelink: 'firstPageLink'
+            mdnimagelink: 'https://i.imgur.com/ESNEOFg.png', 
+            mdnpagelink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat'
         },
         {
             id: '2', 
@@ -53,7 +53,7 @@ function makeDocsArray() {
     return [
         {
             id: '1',
-            term: 'fetch', 
+            term: 'concat()', 
             fkmdndocs: '1', 
             fkreactdocs: '1'
         },
@@ -71,10 +71,70 @@ function makeDocsArray() {
         },
         {
             id: '4', 
-            term: 'map', 
+            term: 'fetch', 
             fkmdndocs: '4', 
             fkreactdocs: '4'
         }
+    ]
+}
+
+function makeUsersArray() {
+    return [
+        {
+            id: '1',
+            username: 'First',
+            password: "first"
+        },
+        {
+            id: '2',
+            username: 'Second',
+            password: "second"
+        },
+        {
+            id: '3',
+            username: 'Third',
+            password: "third"
+        },
+        {
+            id: '4',
+            username: 'Fourth',
+            password: "fourth"
+        },
+        {
+            id: '5',
+            username: 'Fifth',
+            password: "fifth"
+        },
+    ]
+}
+
+function makeUserHistory() {
+    return [
+        {
+            id: '1',
+            fkuserid: '1',
+            searchname: "fetch"
+        },
+        {
+            id: '2',
+            fkuserid: '1',
+            searchname: "parseInt()"
+        },
+        {
+            id: '3',
+            fkuserid: '2',
+            searchname: "push()"
+        },
+        {
+            id: '4',
+            fkuserid: '3',
+            searchname: "toString()"
+        },
+        {
+            id: '5',
+            fkuserid: '3',
+            searchname: "val()"
+        },
     ]
 }
 
@@ -82,5 +142,7 @@ function makeDocsArray() {
 module.exports = {
     makeMDNDocsArray,
     makeReactDocsArray,
-    makeDocsArray
+    makeDocsArray,
+    makeUsersArray,
+    makeUserHistory,
 }

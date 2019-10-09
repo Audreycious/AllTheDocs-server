@@ -21,3 +21,9 @@ CREATE TABLE documents (
     fkmdndocs VARCHAR REFERENCES mdndocs(id) NOT NULL,
     fkreactdocs VARCHAR REFERENCES reactdocs(id) NOT NULL
 );
+
+CREATE TABLE userhistory(
+    id VARCHAR PRIMARY KEY,
+    fkuserId VARCHAR NULL,
+
+);

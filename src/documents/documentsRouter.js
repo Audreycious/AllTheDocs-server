@@ -2,6 +2,7 @@ const express = require('express')
 const documentsRouter = express.Router()
 const bodyParser = express.json()
 const logger = require('../logger')
+const uuid = require('uuid/v4')
 
 
 documentsRouter
@@ -16,18 +17,47 @@ documentsRouter
             })
     })
     .post(bodyParser, (req, res, next) => {
-        let { searchTerm } = req.body
+        let { searchTerm, username } = req.body
         logger.info(searchTerm)
+        logger.info(username)
+        // give insert obj a new id
+        let id = uuid()
+        let insertObject = { searchname: searchTerm, id }
         let knexInstance = req.app.get('db')
-        knexInstance
-            .from('documents')
-            .select('term', 'mdndocs.mdnimagelink', 'mdndocs.mdnpagelink', 'reactdocs.reactimagelink', 'reactdocs.reactpagelink')
-            .join('mdndocs', 'fkmdndocs' , '=', 'mdndocs.id')
-            .join('reactdocs', 'fkreactdocs' , '=', 'reactdocs.id')
-            .where('term', 'like', `%${searchTerm}%`)
-            .then(rows => {
-                res.status(200).json(rows)
-            })
+        // use username to search for entry
+        let getUser = async () => {
+            return knexInstance
+                .select('*')
+                .from('users')
+                .where('username', username)
+                .then(user => {
+                    return user[0]
+                })
+        }
+        // use user.id to add to insert obj
+        getUser().then(user => {
+            logger.info(user)
+            insertObject.fkuserid = user.id
+            return user
+        })
+        .then(() => {
+            knexInstance
+                .insert(insertObject)
+                .into('userhistory')
+                .then(() => {
+                    knexInstance
+                        .from('documents')
+                        .select('term', 'mdndocs.mdnimagelink', 'mdndocs.mdnpagelink', 'reactdocs.reactimagelink', 'reactdocs.reactpagelink')
+                        .join('mdndocs', 'fkmdndocs' , '=', 'mdndocs.id')
+                        .join('reactdocs', 'fkreactdocs' , '=', 'reactdocs.id')
+                        .where('term', 'like', `%${searchTerm}%`)
+                        .then(rows => {
+                            res.status(200).json(rows)
+                        })
+                })
+        })
+        
+        
     })
 
     // [{
