@@ -128,30 +128,6 @@ describe('AllTheDocs endpoints', () => {
         })
     })
 
-<<<<<<< HEAD
-    describe.only('/api/signup endpoints', () => {
-        context('POST', () => {
-            let seedUser = {
-                id: 'SeedId',
-                username: 'SeedUser',
-                password: 'SeedPassword'
-            }
-            let testUser = {
-                username: 'Audrey',
-                password: 'Audrey'
-            }
-            beforeEach('insert a seedUser', () => {
-                return db
-                    .into('users')
-                    .insert(seedUser)
-            })
-            it('responds with 201 and the user info', () => {
-                return supertest(app)
-                    .post(`/api/signup`)
-                    .send(testUser)
-                    .expect(201, testUser)
-            })  
-=======
     describe('/api/login endpoint', () => {
         context('POST', () => {
             let seedUsers = makeUsersArray()
@@ -175,7 +151,6 @@ describe('AllTheDocs endpoints', () => {
                     .expect(200, whatToExpect)
             });
             
->>>>>>> 9c602ef9570ecb019c977fe7bd9583bdd1f0d99b
         })
     });
     
