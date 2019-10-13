@@ -900,3 +900,16 @@
 {"message":{"id":"1","username":"First","password":"first"},"level":"info"}
 {"message":[{"id":"1","fkuserid":"1","searchname":"fetch"},{"id":"2","fkuserid":"1","searchname":"parseInt()"}],"level":"info"}
 {"message":[{"id":"1","fkuserid":"1","searchname":"fetch"},{"id":"2","fkuserid":"1","searchname":"parseInt()"}],"level":"info"}
+{"message":["First","first"],"level":"info"}
+{"message":["First","first"],"level":"info"}
+{"message":["First","first"],"level":"info"}
+{"message":[],"level":"info"}
+{"message":["First","first"],"level":"info"}
+{"message":[{"id":"1"}],"level":"info"}
+{"message":[],"level":"info"}
+{"message":["First","first"],"level":"info"}
+{"message":[{"id":"1"}],"level":"info"}
+{"message":[],"level":"info"}
+{"message":["First","first"],"level":"info"}
+{"message":[{"id":"1"}],"level":"info"}
+{"message":[{"id":"1","fkuserid":"1","searchname":"fetch"},{"id":"2","fkuserid":"1","searchname":"parseInt()"}],"level":"info"}

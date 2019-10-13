@@ -141,6 +141,7 @@ describe('AllTheDocs endpoints', () => {
             let seedUsers = makeUsersArray()
             let seedUserHistory = makeUserHistory()
             let testUser = seedUsers[0]
+            let testUserString = `${testUser.username}:${testUser.password}`
             let whatToExpect = {userSearchHistory: [seedUserHistory[0], seedUserHistory[1]]}
             beforeEach('insert seedUsers', () => {
                 return db
@@ -155,7 +156,7 @@ describe('AllTheDocs endpoints', () => {
             it('returns 200 and an object of search history', () => {
                 return supertest(app)
                     .post('/api/users')
-                    .send(testUser)
+                    .send({user: testUserString})
                     .expect(200, whatToExpect)
             })
             
