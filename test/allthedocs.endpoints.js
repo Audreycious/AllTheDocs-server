@@ -74,17 +74,6 @@ describe('AllTheDocs endpoints', () => {
 
             context('POST if valid search', () => {
                 const searchTerm = 'f'
-                // const searchArr = []
-                // testDocs.forEach(entry => {
-                //     // on each, compare search against the term
-                //         // compare with .includes()
-                //     if (entry.term.includes(searchTerm)) {
-                //         // once we find a match, store the match in a variable
-                //         // keep going until the end
-                //         searchArr.push(entry)
-                //     }
-                // })  
-                // logger.info(searchArr)
                 it('responds with 200 and an array of filtered test documents', () => {
                     return supertest(app)
                         .post('/api/documents')

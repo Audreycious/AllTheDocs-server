@@ -32,7 +32,8 @@ INSERT INTO mdndocs (id, mdnimagelink, mdnpagelink)
         ('26', 'https://i.imgur.com/g75rrXb.png', 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object'),
         ('27', 'https://i.imgur.com/hx6dDCB.png', 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat'),
         ('28', 'https://i.imgur.com/kpgs7o8.png', 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/valueOf'),
-        ('29', 'https://i.imgur.com/3NfFWWg.png', 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt');
+        ('29', 'https://i.imgur.com/3NfFWWg.png', 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt'),
+        ('30', 'https://i.imgur.com/LKmodn4.png', 'https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch');
 
 
 INSERT INTO reactdocs (id, reactimagelink, reactpagelink)
@@ -65,7 +66,8 @@ INSERT INTO reactdocs (id, reactimagelink, reactpagelink)
         ('26', 'twentysixImageLink', 'twentysixPageLink'),
         ('27', 'twentysevenImageLink', 'twentysevenPageLink'),
         ('28', 'twentyeightImageLink', 'twentyeightPageLink'),
-        ('29', 'twentynineImageLink', 'fourthPageLink');
+        ('29', 'twentynineImageLink', 'twentyninePageLink'),
+        ('30', 'thirtyImageLink', 'thirtyPageLink');
 
 INSERT INTO documents (id, term, fkmdndocs, fkreactdocs)
     VALUES
@@ -97,5 +99,6 @@ INSERT INTO documents (id, term, fkmdndocs, fkreactdocs)
         ('26', 'object', '26', '26'),
         ('27', 'concat', '27', '27'),
         ('28', 'valueof', '28', '28'),
-        ('29', 'charcodeat', '29', '29');
+        ('29', 'charcodeat', '29', '29'),
+        ('30', 'fetch', '30', '30');
 COMMIT;
