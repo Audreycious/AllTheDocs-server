@@ -120,9 +120,28 @@ describe('AllTheDocs endpoints', () => {
     describe('/api/login endpoint', () => {
         context('POST', () => {
             let seedUsers = makeUsersArray()
+            let testUser = seedUsers[0]
+            beforeEach('insert seedUsers', () => {
+                return db
+                    .into('users')
+                    .insert(seedUsers)
+            })
+            it('returns 200 and an object with the testUser', () => {
+                return supertest(app)
+                    .post('/api/login')
+                    .send(testUser)
+                    .expect(200, testUser)
+            })
+            
+        })
+    })
+
+    describe.only('/api/users endpoint', () => {
+        context('POST', () => {
+            let seedUsers = makeUsersArray()
             let seedUserHistory = makeUserHistory()
             let testUser = seedUsers[0]
-            let whatToExpect = {user: testUser, userSearchHistory: [seedUserHistory[0], seedUserHistory[1]]}
+            let whatToExpect = {userSearchHistory: [seedUserHistory[0], seedUserHistory[1]]}
             beforeEach('insert seedUsers', () => {
                 return db
                     .into('users')
@@ -133,14 +152,13 @@ describe('AllTheDocs endpoints', () => {
                             .insert(seedUserHistory)
                     })
             })
-            it('returns 200 and an object with the testUser and its search history', () => {
+            it('returns 200 and an object of search history', () => {
                 return supertest(app)
-                    .post('/api/login')
+                    .post('/api/users')
                     .send(testUser)
                     .expect(200, whatToExpect)
-            });
+            })
             
         })
-    });
-    
+    })    
 })

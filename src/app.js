@@ -7,6 +7,7 @@ const { NODE_ENV } = require('./config')
 const documentsRouter = require('./documents/documentsRouter')
 const signupRouter = require('./signup/signupRouter')
 const loginRouter = require('./login/loginRouter')
+const usersRouter = require('./users/usersRouter')
 
 
 const app = express()
@@ -28,6 +29,8 @@ app.use('/api/documents', documentsRouter)
 app.use('/api/signup', signupRouter)
 
 app.use('/api/login', loginRouter)
+
+app.use('/api/users', usersRouter)
 
 app.use(function errorHandler(error, req, res, next) {
     let response

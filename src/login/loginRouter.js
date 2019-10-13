@@ -19,16 +19,6 @@ loginRouter
                     return users
                 })
         }
-
-        let findSearchHistory = async (user) => {
-            return knexInstance
-                .select('*')
-                .from('userhistory')
-                .where('fkuserid', user.id)
-                .then(searchHistory => {
-                    return searchHistory
-                })
-        }
             
         getUsers().then(users => {  
             let user = users.find(user => user.username === username)
@@ -39,11 +29,7 @@ loginRouter
             if (!(user.password.toLowerCase() === password.toLowerCase())) {
                 return res.status(401).send({error: `Password incorrect`}) 
             }
-            return findSearchHistory(user).then(userSearchHistory => {
-                let userPackage = { user, userSearchHistory }
-                logger.info(userPackage)
-                return res.status(200).send(userPackage)
-            })   
+            return res.status(200).send(user)  
         })
     })
 
