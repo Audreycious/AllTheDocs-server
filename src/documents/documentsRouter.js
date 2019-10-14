@@ -17,9 +17,12 @@ documentsRouter
             })
     })
     .post(bodyParser, (req, res, next) => {
-        let { searchTerm, username } = req.body
+        let { searchTerm, user } = req.body
         logger.info(searchTerm)
-        logger.info(username)
+        logger.info(user)
+        let tempUser = user.split(':')
+        let username = tempUser[0]
+        let password = tempUser[1]
         // give insert obj a new id
         let id = uuid()
         let insertObject = { searchname: searchTerm, id }
