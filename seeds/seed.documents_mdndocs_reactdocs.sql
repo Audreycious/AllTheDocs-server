@@ -38,7 +38,6 @@ INSERT INTO mdndocs (id, mdnimagelink, mdnpagelink)
 
 INSERT INTO reactdocs (id, reactimagelink, reactpagelink)
     VALUES
-<<<<<<< HEAD
         ('1', 'https://i.imgur.com/PKquEnH.png', 'https://reactjs.org/docs/components-and-props.html#function-and-class-components'),
         ('2', 'https://i.imgur.com/G2uBnG4.png', 'https://reactjs.org/docs/composition-vs-inheritance.html#___gatsby'),
         ('3', 'https://i.imgur.com/ma8C4wv.png', 'https://reactjs.org/docs/conditional-rendering.html#___gatsby'),
@@ -55,24 +54,6 @@ INSERT INTO reactdocs (id, reactimagelink, reactpagelink)
         ('14', 'https://i.imgur.com/eDLErrT.png', 'https://reactjs.org/docs/state-and-lifecycle.html#converting-a-function-to-a-class'),
         ('15', 'https://i.imgur.com/AhIy5Fd.png', 'https://reactjs.org/docs/thinking-in-react.html'),
         ('16', 'https://i.imgur.com/8QY4x9X.png', 'https://reactjs.org/docs/accessibility.html#why-accessibility');
-=======
-        ('1', 'https://i.imgur.com/NSL98L6.png', 'https://reactjs.org/docs/optimizing-performance.html#the-power-of-not-mutating-data'),
-        ('2', 'secondImageLink', 'secondPageLink'),
-        ('3', 'thirdImageLink', 'thirdPageLink'),
-        ('4', 'fourthImageLink', 'fourthPageLink'),
-        ('5', 'fifthImageLink', 'fifthPageLink'),
-        ('6', 'sixthImageLink', 'sixthPageLink'),
-        ('7', 'seventhImageLink', 'seventhPageLink'),
-        ('8', 'eighthImageLink', 'eighthPageLink'),
-        ('9', 'ninthImageLink', 'ninthPageLink'),
-        ('10', 'tenthImageLink', 'tenthPageLink'),
-        ('11', 'eleventhImageLink', 'eleventhPageLink'),
-        ('12', 'twelfthImageLink', 'twelfthPageLink'),
-        ('13', 'thirteenthImageLink', 'thirteenthPageLink'),
-        ('14', 'fourteenthImageLink', 'fourteenthPageLink'),
-        ('15', 'fifteenthImageLink', 'fifteenthPageLink'),
-        ('16', 'sixteenthImageLink', 'sixteenthPageLink'),
->>>>>>> 322e959c0366975722a5bfd699ee58cf02e4f3c8
         ('17', 'seventeenthImageLink', 'seventeenthPageLink'),
         ('18', 'eighteenthImageLink', 'eighteenthPageLink'),
         ('19', 'nineteenthImageLink', 'nineteenthPageLink'),
