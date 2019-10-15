@@ -10,7 +10,6 @@ usersRouter
         let findSearchHistory = async (user) => {
             let knexInstance = req.app.get('db')
             let tempUser = user.split(':')
-            logger.info(tempUser)
             let username = tempUser[0]
             let password = tempUser[1]
             return knexInstance
@@ -29,7 +28,11 @@ usersRouter
                 })
         }
         findSearchHistory(req.body.user).then(history => {
-            return res.status(200).json({userSearchHistory: history})
+            let response = history
+            if (!history) {
+                response = []
+            }
+            return res.status(200).json({userSearchHistory: response})
         })
     })
 

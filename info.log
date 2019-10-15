@@ -1584,3 +1584,10 @@
 {"message":"concat","level":"info"}
 {"message":"Demo:Demo","level":"info"}
 {"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","username":"Demo","password":"Demo"},"level":"info"}
+{"message":{"username":"Demo","password":"Demo"},"level":"info"}
+{"message":["Demo","Demo"],"level":"info"}
+{"message":[{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"}],"level":"info"}
+{"message":"Post history ran","level":"info"}
+{"message":"concat","level":"info"}
+{"message":"Demo:Demo","level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","username":"Demo","password":"Demo"},"level":"info"}
