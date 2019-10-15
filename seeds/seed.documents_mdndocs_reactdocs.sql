@@ -38,7 +38,7 @@ INSERT INTO mdndocs (id, mdnimagelink, mdnpagelink)
 
 INSERT INTO reactdocs (id, reactimagelink, reactpagelink)
     VALUES
-        ('1', 'firstImageLink', 'firstPageLink'),
+        ('1', 'https://i.imgur.com/NSL98L6.png', 'https://reactjs.org/docs/optimizing-performance.html#the-power-of-not-mutating-data'),
         ('2', 'secondImageLink', 'secondPageLink'),
         ('3', 'thirdImageLink', 'thirdPageLink'),
         ('4', 'fourthImageLink', 'fourthPageLink'),
