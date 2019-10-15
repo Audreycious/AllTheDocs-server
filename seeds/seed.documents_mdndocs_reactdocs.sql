@@ -63,7 +63,7 @@ INSERT INTO reactdocs (id, reactimagelink, reactpagelink)
         ('13', 'nothing', 'nothing'),
         ('14', 'nothing', 'nothing'),
         ('15', 'nothing', 'nothing'),
-        ('16', 'https://i.imgur.com/O1eZuOd.png', 'https://reactjs.org/docs/jsx-in-depth.html#string-literals-1');
+        ('16', 'https://i.imgur.com/O1eZuOd.png', 'https://reactjs.org/docs/jsx-in-depth.html#string-literals-1'),
         ('17', 'https://i.imgur.com/VHV5mtT.png', 'https://reactjs.org/docs/react-dom-server.html#rendertostring'),
         ('18', 'nothing', 'nothing'),
         ('19', 'nothing', 'nothing'),
