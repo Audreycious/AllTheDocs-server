@@ -1296,3 +1296,291 @@
 {"level":"info"}
 {"message":["Demo","Demo"],"level":"info"}
 {"message":[{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"}],"level":"info"}
+{"message":{"username":"Demo","password":"Demo"},"level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","username":"Demo","password":"Demo"},"level":"info"}
+{"message":["Demo","Demo"],"level":"info"}
+{"message":[{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"}],"level":"info"}
+{"message":"Post history ran","level":"info"}
+{"message":"fetch","level":"info"}
+{"message":"Demo:Demo","level":"info"}
+{"message":"Row 0","level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"},"level":"info"}
+{"message":"InsertObj","level":"info"}
+{"message":{"id":"386dd38d-3baa-420d-abc0-f2710be7854d","fkuserid":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","searchname":"fetch"},"level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","username":"Demo","password":"Demo"},"level":"info"}
+{"message":["Demo","Demo"],"level":"info"}
+{"message":[{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"}],"level":"info"}
+{"message":"Post history ran","level":"info"}
+{"message":"dontdoublethis","level":"info"}
+{"message":"Demo:Demo","level":"info"}
+{"message":"Row 0","level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"},"level":"info"}
+{"message":"InsertObj","level":"info"}
+{"message":{"id":"89708eaa-12f7-40ec-ab6e-d05bdfe80884","fkuserid":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","searchname":"dontdoublethis"},"level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","username":"Demo","password":"Demo"},"level":"info"}
+{"message":["Demo","Demo"],"level":"info"}
+{"message":[{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"}],"level":"info"}
+{"message":["Demo","Demo"],"level":"info"}
+{"message":[{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"}],"level":"info"}
+{"message":"Post history ran","level":"info"}
+{"message":"double","level":"info"}
+{"message":"Demo:Demo","level":"info"}
+{"message":"Row 0","level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"},"level":"info"}
+{"message":"InsertObj","level":"info"}
+{"message":{"id":"563946b3-1921-47a7-85b3-9905933dfe06","fkuserid":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","searchname":"double"},"level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","username":"Demo","password":"Demo"},"level":"info"}
+{"message":["Demo","Demo"],"level":"info"}
+{"message":[{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"}],"level":"info"}
+{"message":["Demo","Demo"],"level":"info"}
+{"message":[{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"}],"level":"info"}
+{"message":"Post history ran","level":"info"}
+{"message":"new double","level":"info"}
+{"message":"Demo:Demo","level":"info"}
+{"message":"Row 0","level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"},"level":"info"}
+{"message":"InsertObj","level":"info"}
+{"message":{"id":"f2b80fe6-b61b-4c48-91d9-313330f2d0c1","fkuserid":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","searchname":"new double"},"level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","username":"Demo","password":"Demo"},"level":"info"}
+{"message":"Post history ran","level":"info"}
+{"message":"","level":"info"}
+{"message":"Demo:Demo","level":"info"}
+{"message":"Row 0","level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"},"level":"info"}
+{"message":"InsertObj","level":"info"}
+{"message":{"id":"e7eb9dfd-579b-4112-93d3-6c41b2c2ecc8","fkuserid":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","searchname":""},"level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","username":"Demo","password":"Demo"},"level":"info"}
+{"message":"","level":"info"}
+{"message":"Demo:Demo","level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","username":"Demo","password":"Demo"},"level":"info"}
+{"message":["Demo","Demo"],"level":"info"}
+{"message":[{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"}],"level":"info"}
+{"message":["Demo","Demo"],"level":"info"}
+{"message":[{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"}],"level":"info"}
+{"message":"Post history ran","level":"info"}
+{"message":"new","level":"info"}
+{"message":"Demo:Demo","level":"info"}
+{"message":"Row 0","level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"},"level":"info"}
+{"message":"InsertObj","level":"info"}
+{"message":{"id":"4aa0a607-740d-4293-bdaa-94b6e49b078e","fkuserid":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","searchname":"new"},"level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","username":"Demo","password":"Demo"},"level":"info"}
+{"message":"Post history ran","level":"info"}
+{"message":"","level":"info"}
+{"message":"Demo:Demo","level":"info"}
+{"message":"Row 0","level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"},"level":"info"}
+{"message":"InsertObj","level":"info"}
+{"message":{"id":"115f5ce1-d372-4346-8831-54348ad31644","fkuserid":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","searchname":""},"level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","username":"Demo","password":"Demo"},"level":"info"}
+{"message":["Demo","Demo"],"level":"info"}
+{"message":[{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"}],"level":"info"}
+{"message":["Demo","Demo"],"level":"info"}
+{"message":[{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"}],"level":"info"}
+{"message":"Post history ran","level":"info"}
+{"message":"test","level":"info"}
+{"message":"Demo:Demo","level":"info"}
+{"message":"Row 0","level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"},"level":"info"}
+{"message":"InsertObj","level":"info"}
+{"message":{"id":"211304be-5c94-4af3-97c2-a45c76926b5d","fkuserid":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","searchname":"test"},"level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","username":"Demo","password":"Demo"},"level":"info"}
+{"message":"Post history ran","level":"info"}
+{"message":"","level":"info"}
+{"message":"Demo:Demo","level":"info"}
+{"message":"Row 0","level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"},"level":"info"}
+{"message":"InsertObj","level":"info"}
+{"message":{"id":"4dd3d9e0-927f-4d32-9ce9-a749f82c20c8","fkuserid":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","searchname":""},"level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","username":"Demo","password":"Demo"},"level":"info"}
+{"message":["Demo","Demo"],"level":"info"}
+{"message":[{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"}],"level":"info"}
+{"message":["Demo","Demo"],"level":"info"}
+{"message":[{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"}],"level":"info"}
+{"message":["Demo","Demo"],"level":"info"}
+{"message":[{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"}],"level":"info"}
+{"message":["Demo","Demo"],"level":"info"}
+{"message":[{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"}],"level":"info"}
+{"message":["Demo","Demo"],"level":"info"}
+{"message":[{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"}],"level":"info"}
+{"message":"test","level":"info"}
+{"message":"Demo:Demo","level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","username":"Demo","password":"Demo"},"level":"info"}
+{"message":["Demo","Demo"],"level":"info"}
+{"message":[{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"}],"level":"info"}
+{"message":"Post history ran","level":"info"}
+{"message":"testing","level":"info"}
+{"message":"Demo:Demo","level":"info"}
+{"message":"Row 0","level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"},"level":"info"}
+{"message":"InsertObj","level":"info"}
+{"message":{"id":"09705363-7e2d-484e-82fd-a6d56f233ab4","fkuserid":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","searchname":"testing"},"level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","username":"Demo","password":"Demo"},"level":"info"}
+{"message":["Demo","Demo"],"level":"info"}
+{"message":[{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"}],"level":"info"}
+{"message":"Post history ran","level":"info"}
+{"message":"test2","level":"info"}
+{"message":"Demo:Demo","level":"info"}
+{"message":"Row 0","level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"},"level":"info"}
+{"message":"InsertObj","level":"info"}
+{"message":{"id":"79234ec9-b3c5-4b46-a230-f53b3fbfbbfd","fkuserid":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","searchname":"test2"},"level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","username":"Demo","password":"Demo"},"level":"info"}
+{"message":["Demo","Demo"],"level":"info"}
+{"message":[{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"}],"level":"info"}
+{"message":["Demo","Demo"],"level":"info"}
+{"message":[{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"}],"level":"info"}
+{"message":["Demo","Demo"],"level":"info"}
+{"message":[{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"}],"level":"info"}
+{"message":"Post history ran","level":"info"}
+{"message":"test3","level":"info"}
+{"message":"Demo:Demo","level":"info"}
+{"message":"Row 0","level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"},"level":"info"}
+{"message":"InsertObj","level":"info"}
+{"message":{"id":"83078b23-ddff-4cff-b0d1-9f2c4e58d404","fkuserid":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","searchname":"test3"},"level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","username":"Demo","password":"Demo"},"level":"info"}
+{"message":["Demo","Demo"],"level":"info"}
+{"message":[{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"}],"level":"info"}
+{"message":"test4","level":"info"}
+{"message":"Demo:Demo","level":"info"}
+{"message":"Post history ran","level":"info"}
+{"message":"Row 0","level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"},"level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","username":"Demo","password":"Demo"},"level":"info"}
+{"message":"Post history ran","level":"info"}
+{"message":"Row 0","level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"},"level":"info"}
+{"message":"InsertObj","level":"info"}
+{"message":{"id":"c48178cc-6bd1-4df6-a4f7-816fb3c7d272","fkuserid":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","searchname":"test4"},"level":"info"}
+{"message":"Post history ran","level":"info"}
+{"message":"test4","level":"info"}
+{"message":"Demo:Demo","level":"info"}
+{"message":"Row 0","level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"},"level":"info"}
+{"message":"InsertObj","level":"info"}
+{"message":{"id":"8d13dbda-1100-4bf9-827d-138481fc363c","fkuserid":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","searchname":"test4"},"level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","username":"Demo","password":"Demo"},"level":"info"}
+{"message":"Post history ran","level":"info"}
+{"message":"Row 0","level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"},"level":"info"}
+{"message":"InsertObj","level":"info"}
+{"message":{"id":"8ddafed0-8541-47cc-9c58-07ac8ee4ee51","fkuserid":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","searchname":"test4"},"level":"info"}
+{"message":["Demo","Demo"],"level":"info"}
+{"message":[{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"}],"level":"info"}
+{"message":"Post history ran","level":"info"}
+{"message":"test5","level":"info"}
+{"message":"Demo:Demo","level":"info"}
+{"message":"Row 0","level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"},"level":"info"}
+{"message":"InsertObj","level":"info"}
+{"message":{"id":"bf653440-7fdd-4e3e-a666-33595b7c08d7","fkuserid":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","searchname":"test5"},"level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","username":"Demo","password":"Demo"},"level":"info"}
+{"message":["Demo","Demo"],"level":"info"}
+{"message":[{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"}],"level":"info"}
+{"message":"Post history ran","level":"info"}
+{"message":"test7","level":"info"}
+{"message":"Demo:Demo","level":"info"}
+{"message":"Row 0","level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"},"level":"info"}
+{"message":"InsertObj","level":"info"}
+{"message":{"id":"91c7f47d-9009-4338-b74e-f76756b7920e","fkuserid":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","searchname":"test7"},"level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","username":"Demo","password":"Demo"},"level":"info"}
+{"message":["Demo","Demo"],"level":"info"}
+{"message":[{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"}],"level":"info"}
+{"message":"Post history ran","level":"info"}
+{"message":"test8","level":"info"}
+{"message":"Demo:Demo","level":"info"}
+{"message":"Row 0","level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"},"level":"info"}
+{"message":"InsertObj","level":"info"}
+{"message":{"id":"38b0b03a-660c-47e1-ab3d-27515a43b226","fkuserid":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","searchname":"test8"},"level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","username":"Demo","password":"Demo"},"level":"info"}
+{"message":["Demo","Demo"],"level":"info"}
+{"message":[{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"}],"level":"info"}
+{"message":["Demo","Demo"],"level":"info"}
+{"message":[{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"}],"level":"info"}
+{"message":"Post history ran","level":"info"}
+{"message":"test9","level":"info"}
+{"message":"Demo:Demo","level":"info"}
+{"message":"Row 0","level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"},"level":"info"}
+{"message":"InsertObj","level":"info"}
+{"message":{"id":"5dd0e1a4-0339-489f-8ec5-63c12fcc8a5c","fkuserid":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","searchname":"test9"},"level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","username":"Demo","password":"Demo"},"level":"info"}
+{"message":["Demo","Demo"],"level":"info"}
+{"message":[{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"}],"level":"info"}
+{"message":["Demo","Demo"],"level":"info"}
+{"message":[{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"}],"level":"info"}
+{"message":"Post history ran","level":"info"}
+{"message":"test10","level":"info"}
+{"message":"Demo:Demo","level":"info"}
+{"message":"Row 0","level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"},"level":"info"}
+{"message":"InsertObj","level":"info"}
+{"message":{"id":"d965933b-98f1-4286-9a88-84fad0e538ce","fkuserid":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","searchname":"test10"},"level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","username":"Demo","password":"Demo"},"level":"info"}
+{"message":["Demo","Demo"],"level":"info"}
+{"message":[{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"}],"level":"info"}
+{"message":"Post history ran","level":"info"}
+{"message":"test11","level":"info"}
+{"message":"Demo:Demo","level":"info"}
+{"message":"Row 0","level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"},"level":"info"}
+{"message":"InsertObj","level":"info"}
+{"message":{"id":"cbb7a108-98af-4cff-bc14-d84c3d6f598c","fkuserid":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","searchname":"test11"},"level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","username":"Demo","password":"Demo"},"level":"info"}
+{"message":["Demo","Demo"],"level":"info"}
+{"message":[{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"}],"level":"info"}
+{"message":"Post history ran","level":"info"}
+{"message":"concat","level":"info"}
+{"message":"Demo:Demo","level":"info"}
+{"message":"Row 0","level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"},"level":"info"}
+{"message":"InsertObj","level":"info"}
+{"message":{"id":"2c09e8e2-306b-431a-a9ce-be7022acdd78","fkuserid":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","searchname":"concat"},"level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","username":"Demo","password":"Demo"},"level":"info"}
+{"message":["Demo","Demo"],"level":"info"}
+{"message":[{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"}],"level":"info"}
+{"message":"test10","level":"info"}
+{"message":"Demo:Demo","level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","username":"Demo","password":"Demo"},"level":"info"}
+{"message":"Post history ran","level":"info"}
+{"message":"itwilsave","level":"info"}
+{"message":"Demo:Demo","level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","username":"Demo","password":"Demo"},"level":"info"}
+{"message":["Demo","Demo"],"level":"info"}
+{"message":[{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"}],"level":"info"}
+{"message":"Post history ran","level":"info"}
+{"message":"test","level":"info"}
+{"message":"Demo:Demo","level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","username":"Demo","password":"Demo"},"level":"info"}
+{"message":["Demo","Demo"],"level":"info"}
+{"message":[{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"}],"level":"info"}
+{"message":"test","level":"info"}
+{"message":"Demo:Demo","level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","username":"Demo","password":"Demo"},"level":"info"}
+{"message":["Demo","Demo"],"level":"info"}
+{"message":[{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"}],"level":"info"}
+{"message":"test","level":"info"}
+{"message":"Demo:Demo","level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","username":"Demo","password":"Demo"},"level":"info"}
+{"message":["Demo","Demo"],"level":"info"}
+{"message":[{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"}],"level":"info"}
+{"message":"test","level":"info"}
+{"message":"Demo:Demo","level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","username":"Demo","password":"Demo"},"level":"info"}
+{"message":["Demo","Demo"],"level":"info"}
+{"message":[{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"}],"level":"info"}
+{"message":"test","level":"info"}
+{"message":"Demo:Demo","level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","username":"Demo","password":"Demo"},"level":"info"}
+{"message":"Post history ran","level":"info"}
+{"message":"concat","level":"info"}
+{"message":"Demo:Demo","level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","username":"Demo","password":"Demo"},"level":"info"}
+{"message":["Demo","Demo"],"level":"info"}
+{"message":[{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3"}],"level":"info"}
+{"message":"concat","level":"info"}
+{"message":"Demo:Demo","level":"info"}
+{"message":{"id":"f8a3e2c8-50f5-445d-85ae-eaee329897a3","username":"Demo","password":"Demo"},"level":"info"}

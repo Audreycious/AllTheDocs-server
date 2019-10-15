@@ -22,7 +22,6 @@ loginRouter
             
         getUsers().then(users => {  
             let user = users.find(user => user.username === username)
-            logger.info(user)
             if (user === null) {
                 return res.status(400).send({error: `Username not found, please signup`})
             }
