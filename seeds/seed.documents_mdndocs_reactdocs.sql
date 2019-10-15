@@ -38,22 +38,22 @@ INSERT INTO mdndocs (id, mdnimagelink, mdnpagelink)
 
 INSERT INTO reactdocs (id, reactimagelink, reactpagelink)
     VALUES
-        ('1', 'firstImageLink', 'firstPageLink'),
-        ('2', 'secondImageLink', 'secondPageLink'),
-        ('3', 'thirdImageLink', 'thirdPageLink'),
-        ('4', 'fourthImageLink', 'fourthPageLink'),
-        ('5', 'fifthImageLink', 'fifthPageLink'),
-        ('6', 'sixthImageLink', 'sixthPageLink'),
-        ('7', 'seventhImageLink', 'seventhPageLink'),
-        ('8', 'eighthImageLink', 'eighthPageLink'),
-        ('9', 'ninthImageLink', 'ninthPageLink'),
-        ('10', 'tenthImageLink', 'tenthPageLink'),
-        ('11', 'eleventhImageLink', 'eleventhPageLink'),
-        ('12', 'twelfthImageLink', 'twelfthPageLink'),
-        ('13', 'thirteenthImageLink', 'thirteenthPageLink'),
-        ('14', 'fourteenthImageLink', 'fourteenthPageLink'),
-        ('15', 'fifteenthImageLink', 'fifteenthPageLink'),
-        ('16', 'sixteenthImageLink', 'sixteenthPageLink'),
+        ('1', 'https://i.imgur.com/PKquEnH.png', 'https://reactjs.org/docs/components-and-props.html#function-and-class-components'),
+        ('2', 'https://i.imgur.com/G2uBnG4.png', 'https://reactjs.org/docs/composition-vs-inheritance.html#___gatsby'),
+        ('3', 'https://i.imgur.com/ma8C4wv.png', 'https://reactjs.org/docs/conditional-rendering.html#___gatsby'),
+        ('4', 'https://i.imgur.com/6Zr9Zci.png', 'https://reactjs.org/docs/forms.html#___gatsby'),
+        ('5', 'https://i.imgur.com/DerY4gc.png', 'https://reactjs.org/docs/forwarding-refs.html#forwarding-refs-in-higher-order-components'),
+        ('6', 'https://i.imgur.com/8ylaH2H.png', 'https://reactjs.org/docs/handling-events.html#___gatsby'),
+        ('7', 'https://i.imgur.com/EgXNEhE.png', 'https://reactjs.org/docs/introducing-jsx.html'),
+        ('8', 'https://i.imgur.com/y31JXzw.png', 'https://reactjs.org/docs/lifting-state-up.html#lifting-state-up'),
+        ('9', 'https://i.imgur.com/tvJkgu0.png', 'https://reactjs.org/docs/lists-and-keys.html'),
+        ('10', 'https://i.imgur.com/d8eJvAF.png', 'https://reactjs.org/docs/react-api.html#reactchildrentoarray'),
+        ('11', 'https://i.imgur.com/a9My2dl.png', 'https://reactjs.org/docs/context.html#when-to-use-context'),
+        ('12', 'https://i.imgur.com/pHO1KUK.png', 'https://reactjs.org/docs/error-boundaries.html#introducing-error-boundaries'),
+        ('13', 'https://i.imgur.com/WgIYPTg.png', 'https://reactjs.org/docs/rendering-elements.html'),
+        ('14', 'https://i.imgur.com/eDLErrT.png', 'https://reactjs.org/docs/state-and-lifecycle.html#converting-a-function-to-a-class'),
+        ('15', 'https://i.imgur.com/AhIy5Fd.png', 'https://reactjs.org/docs/thinking-in-react.html'),
+        ('16', 'https://i.imgur.com/8QY4x9X.png', 'https://reactjs.org/docs/accessibility.html#why-accessibility');
         ('17', 'seventeenthImageLink', 'seventeenthPageLink'),
         ('18', 'eighteenthImageLink', 'eighteenthPageLink'),
         ('19', 'nineteenthImageLink', 'nineteenthPageLink'),
@@ -66,8 +66,9 @@ INSERT INTO reactdocs (id, reactimagelink, reactpagelink)
         ('26', 'twentysixImageLink', 'twentysixPageLink'),
         ('27', 'twentysevenImageLink', 'twentysevenPageLink'),
         ('28', 'twentyeightImageLink', 'twentyeightPageLink'),
-        ('29', 'twentynineImageLink', 'twentyninePageLink'),
-        ('30', 'thirtyImageLink', 'thirtyPageLink');
+        ('29', 'twentynineImageLink', 'fourthPageLink'),
+        ('30', 'thirtyImageLink', 'fourthPageLink'),
+        ('31', 'ImageLink', 'PageLink'),
 
 INSERT INTO documents (id, term, fkmdndocs, fkreactdocs)
     VALUES
