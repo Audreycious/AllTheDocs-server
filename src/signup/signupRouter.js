@@ -41,26 +41,5 @@ signupRouter
                 })       
         })
     })
-        
-
-        // SignupService.getUsers(knexInstance)
-        //     .then(users => {
-        //         logger.info(users)
-        //         let usernameAlreadyExists = !!users.find(user => user.username === username)
-        //         if (!!usernameAlreadyExists) {
-        //             logger.error(`returned at first check`)
-        //             res.status(400).send({error: `Username already exists`})
-        //         }
-        //         let id = uuid()
-        //         let userInfo = { id, username, password }
-        //         logger.info(userInfo)
-        //         let userArr = SignupService.insertUser(knexInstance, userInfo)
-        //             .then((user) => {
-        //                 return user
-        //             })
-        //         res.status(201).send(userArr)
-        //         next()
-        //     })
-        //     .catch(next())
 
 module.exports = signupRouter

@@ -1,14 +1,12 @@
 const express = require('express')
 const loginRouter = express.Router()
 const bodyParser = express.json()
-const logger = require('../logger')
-const uuid = require('uuid/v4')
+
 
 loginRouter
     .route('/')
     .post(bodyParser, (req, res, next) => {
         let { username, password } = req.body
-        logger.info(req.body)
         let knexInstance = req.app.get('db')
 
         let getUsers = async () => {

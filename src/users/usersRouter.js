@@ -1,7 +1,6 @@
 const express = require('express')
 const usersRouter = express.Router()
 const bodyParser = express.json()
-const logger = require('../logger')
 const uuid = require('uuid/v4')
 
 usersRouter
@@ -11,13 +10,11 @@ usersRouter
             let knexInstance = req.app.get('db')
             let tempUser = user.split(':')
             let username = tempUser[0]
-            let password = tempUser[1]
             return knexInstance
                 .select('id')
                 .from('users')
                 .where('username', username)
                 .then(row => {
-                    logger.info(row)
                     return knexInstance
                         .select('searchname')
                         .from('userhistory')
@@ -43,8 +40,6 @@ usersRouter
         let insertSearchHistory = async (user) => {
             let tempUser = user.split(':')
             let username = tempUser[0]
-            let password = tempUser[1]
-            logger.info(`Post history ran`)
             return knexInstance
                 .select('id')
                 .from('users')

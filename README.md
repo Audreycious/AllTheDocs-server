@@ -1,26 +1,169 @@
-# Express Boilerplate!
+AllTheDocs
+AllTheDocs was created as a capstone project to showcase our team's ability to create full-stack applications. The project idea was spawned from the observation that new developers often need multiple sources of assistance while coding to find helpful terms and knowledge. The hopes is that AllTheDocs will assist new developers with their learning journey and give them the support they need to quickly produce quality applications. Hope you enjoy!
 
-This is a boilerplate project used for starting new projects!
+Live Link To The App
 
-## Set up
 
-Complete the following steps to start a new project (NEW-PROJECT-NAME):
+Screenshots
+https://ibb.co/SKnhzHj
+https://ibb.co/QbLJdnG
 
-1. Clone this repository to your local machine `git clone BOILERPLATE-URL NEW-PROJECTS-NAME`
-2. `cd` into the cloned repository
-3. Make a fresh start of the git history for this project with `rm -rf .git && git init`
-4. Install the node dependencies `npm install`
-5. Move the example Environment file to `.env` that will be ignored by git and read by the express server `mv example.env .env`
-6. Edit the contents of the `package.json` to use NEW-PROJECT-NAME instead of `"name": "express-boilerplate",`
+Summary
+This app uses a documentation server (AllTheDocs Server) to reply to a search query with information from MDN and React documentation. The app also uses the StackExchange API to give the user the top 5 results from StackOverflow; as well as, the top 5 videos from Youtube using the Youtube API. The documentation server has queries added daily and will expand into other documentations in the future. The user creates and account which logs their search history and allows them to quickly search the same term again. In the future, the user account will also store favorites so that the user can keep their top searches always available.
 
-## Scripts
+Built With
+HTML
+CSS
+Javascript
+jQuery
+Node.js
+Express.js
+Postgres
+DBeaver
+Mocha
+Chai
 
-Start the application `npm start`
+How to use this API
+Base URL: https://allthedocs.herokuapp.com/api
 
-Start nodemon for the application `npm run dev`
+    Users:
+        URL: /users
+        You MUST be logged in or send your credentials as a Bearer Token in the headers to use this endpoint. (e.g. {"Authorization": "Bearer [Username]:[Password]})
 
-Run the tests `npm test`
+        Methods:    POST, to gather user search history
 
-## Deploying
+                        Response body example (200): {
+                                                        userSearchHistory: [{}, {}, ...]
+                                                                                            }
 
-When your new project is ready for deployment, add a new Heroku application with `heroku create`. This will make a new git remote called "heroku" and you can then `npm run deploy` which will push to this remote's master branch.
+                        Sample call:    fetch(url/users, {
+                                            ContentType: "application/json",
+                                            method : "POST",
+                                            headers: {
+                                                Authorization: "Bearer YourBearerToken"
+                                            }
+                                        }
+
+        URL: /users/history
+        You MUST be logged in or send your credentials as a Bearer Token in the headers to use this endpoint. (e.g. {"Authorization": "Bearer [Username]:[Password]})
+
+        Methods:    POST, to post new user search history
+
+                        Params: searchname=[alphanumeric], required
+
+                        Response body example (201): {}
+
+                        Sample call:    fetch(url/users/history, {
+                                            ContentType: "application/json",
+                                            method : "POST",
+                                            headers: {
+                                                Authorization: "Bearer YourBearerToken"
+                                            }
+                                            body: JSON.stringify({
+                                                searchname: "Fetch"
+                                            })
+                                        }   
+
+    Signup:
+        URL: /signup
+
+        Methods:    POST, to register a new user
+                        
+                        Response body example (201): {
+                                                        username: "MyUsername",
+                                                        password: "MyPassword"
+                                                                                }
+
+                        Response body example (400): {
+                                                        error: "Username already exists"
+                                                                                            }
+
+                        Sample call:    fetch(url/signup, {
+                                            ContentType: "application/json",
+                                            method : "POST",
+                                            body: JSON.stringify({
+                                                username: "MyUsername",
+                                                password: "MyPassword"
+                                            })
+                                        }
+
+    Documents:
+        URL: /documents
+        You MUST be logged in or send your credentials as a Bearer Token in the headers to use this endpoint. (e.g. {"Authorization": "Bearer [Username]:[Password]})
+
+        Methods:    GET, to get all the documents 
+                        
+                        Response body example (200): {
+                                                        documents: [{}, {}, ...],
+                                                                                    }
+
+                        Sample call:    fetch(url/documents, {
+                                            ContentType: "application/json",
+                                            headers: {
+                                                Authorization: "Bearer YourBearerToken"
+                                            }
+                                            method : "GET"
+                                        }
+
+                    POST, to search the database for documents matching the searchTerm
+
+                        Params: searchTerm=[alphanumeric], required
+                                user=[object with username=[string] and password=[string]], required
+
+                        Response body example (201): {
+                                                        id: "someLongUUID",
+                                                        user_id: "someLongUUID",
+                                                        searchname: "MySearch"
+                                                                                   }
+
+                        Sample call:    fetch(url/documents, {
+                                            ContentType: "application/json",
+                                            method : "POST",
+                                            body: JSON.stringify({
+                                                username: "MyUsername",
+                                                password: "MyPassword"
+                                            })
+                                        }   
+
+    Login:
+        URL: /login
+
+        Methods:    POST, to login
+
+                        Params: username=[string], required
+                                password=[string], required
+
+                        Response body example (200): {
+                                                        id: "someLongUUID",
+                                                        username: "MyUsername",
+                                                        password: "MyPassword"
+                                                                                }
+
+                        Response body example (400): {
+                                                        error: "Username not found, please signup"
+                                                                                            }
+
+                        Sample call:    fetch(url/login, {
+                                            ContentType: "application/json",
+                                            method : "POST",
+                                            body: JSON.stringify({
+                                                username: "MyUsername",
+                                                password: "MyPassword"
+                                            })
+                                        }   
+
+Frontend
+This app uses AllTheDocs at https://allthedocs.audreycious.now.sh/
+
+Authors
+Audrey Foss(Project Manager)
+(https://audreycious.github.io/Portfolio/)
+
+Emanuel Rouse (Product Manager) 
+(https://emanualrouse.github.io/Portfolio/)
+
+Ian Neville (Design Lead)
+
+Acknowledgments
+All - Thank you to Jose Sanchez for being our mentor and leader
+Audrey - Thank you to my wife for your constant support
