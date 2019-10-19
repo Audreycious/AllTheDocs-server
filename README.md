@@ -170,7 +170,7 @@ password=[string], **required**
         }   
 
 ## Frontend
-This app uses **AllTheDocs** at [AllTheDocs Frontend](https://allthedocs.audreycious.now.sh/)
+This app uses **AllTheDocs** at [AllTheDocs Frontend](https://github.com/Audreycious/AllTheDocs/)
 
 ## Authors
 Audrey Foss - **_Project Manager_**  
