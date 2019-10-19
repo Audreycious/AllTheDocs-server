@@ -1596,3 +1596,9 @@
 {"level":"info"}
 {"level":"info"}
 {"level":"info"}
+{"message":{"id":"1","username":"Audrey","password":"Audrey"},"level":"info"}
+{"message":{"id":"1","username":"First","password":"first"},"level":"info"}
+{"message":{"id":"1","username":"Audrey","password":"Audrey"},"level":"info"}
+{"message":{"id":"1","username":"First","password":"first"},"level":"info"}
+{"message":{"id":"1","username":"Audrey","password":"Audrey"},"level":"info"}
+{"message":{"id":"1","username":"First","password":"first"},"level":"info"}

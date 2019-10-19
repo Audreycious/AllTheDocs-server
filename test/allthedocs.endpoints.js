@@ -77,7 +77,7 @@ describe('AllTheDocs endpoints', () => {
                 it('responds with 200 and an array of filtered test documents', () => {
                     return supertest(app)
                         .post('/api/documents')
-                        .send({ username: testUsers[0].username, searchTerm: searchTerm})
+                        .send({searchTerm: searchTerm, user: `${testUsers[0].username}:${testUsers[0].password}`})
                         .expect(200, [{
                                 mdnimagelink: "fourthImageLink",
                                 mdnpagelink: "fourthPageLink",
@@ -136,13 +136,13 @@ describe('AllTheDocs endpoints', () => {
         })
     })
 
-    describe.only('/api/users endpoint', () => {
+    describe('/api/users endpoint', () => {
         context('POST', () => {
             let seedUsers = makeUsersArray()
             let seedUserHistory = makeUserHistory()
             let testUser = seedUsers[0]
             let testUserString = `${testUser.username}:${testUser.password}`
-            let whatToExpect = {userSearchHistory: [seedUserHistory[0], seedUserHistory[1]]}
+        let whatToExpect = {userSearchHistory: [{"searchname": seedUserHistory[0].searchname}, {"searchname": seedUserHistory[1].searchname}]}
             beforeEach('insert seedUsers', () => {
                 return db
                     .into('users')
