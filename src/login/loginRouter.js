@@ -1,6 +1,7 @@
 const express = require('express')
 const loginRouter = express.Router()
 const bodyParser = express.json()
+const logger = require('../logger')
 
 
 loginRouter
@@ -20,7 +21,8 @@ loginRouter
             
         getUsers().then(users => {  
             let user = users.find(user => user.username === username)
-            if (user === null) {
+            logger.info(user)
+            if (user === undefined) {
                 return res.status(400).send({error: `Username not found, please signup`})
             }
             if (!(user.password.toLowerCase() === password.toLowerCase())) {
