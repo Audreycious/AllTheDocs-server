@@ -182,5 +182,5 @@ Emanuel Rouse - **_Product Manager_**
 Ian Neville - **_Design Lead_**
 
 ## Acknowledgments
-All - Thank you to Jose Sanchez for being our mentor and leader
+All - Thank you to Jose Sanchez for being our mentor and leader  
 Audrey - Thank you to my wife for your constant support
