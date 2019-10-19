@@ -21,7 +21,7 @@ app.use(helmet())
 app.use(cors())
 
 app.get('/', (req, res) => {
-    res.send('Hello, world!')
+    res.send('Hello, AllTheDocs!')
 })
 
 app.use('/api/documents', documentsRouter)
