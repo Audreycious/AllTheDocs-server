@@ -1602,3 +1602,9 @@
 {"message":{"id":"1","username":"First","password":"first"},"level":"info"}
 {"message":{"id":"1","username":"Audrey","password":"Audrey"},"level":"info"}
 {"message":{"id":"1","username":"First","password":"first"},"level":"info"}
+{"message":"Demo342535:Demo345345","level":"info"}
+{"message":[{"id":"e64c6307-0e5f-4eb2-a3b7-5ad1e2717970"}],"level":"info"}
+{"message":[{"searchname":"fixed it"},{"searchname":"concat"}],"level":"info"}
+{"message":[{"searchname":"fixed it"},{"searchname":"concat"}],"level":"info"}
+{"message":[{"searchname":"fixed it"},{"searchname":"concat"}],"level":"info"}
+{"message":[{"searchname":"fixed it"},{"searchname":"concat"}],"level":"info"}

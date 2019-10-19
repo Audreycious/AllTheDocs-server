@@ -3,6 +3,7 @@ const usersRouter = express.Router()
 const bodyParser = express.json()
 const uuid = require('uuid/v4')
 
+
 usersRouter
     .route('/')
     .post(bodyParser, (req, res, next) => {
@@ -32,9 +33,13 @@ usersRouter
             if (!history) {
                 response = []
             }
+            return response
+        })
+        .then(response => {
             return res.status(200).json({userSearchHistory: response})
         })
     })
+    
 
 usersRouter
     .route('/history')
@@ -58,9 +63,12 @@ usersRouter
                 fkuserid: row[0].id,
                 searchname: req.body.searchname,
             }
-            knexInstance
+            // add the search history to the database
+            return knexInstance
                 .insert(insertObj)
                 .into('userhistory')
+        })
+        .then(() => {
             return res.status(201).json()
         })
     })
