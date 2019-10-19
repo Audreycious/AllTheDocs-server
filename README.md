@@ -2,7 +2,7 @@
 AllTheDocs was created as a capstone project to showcase our team's ability to create full-stack applications. The project idea was spawned from the observation that new developers often need multiple sources of assistance while coding to find helpful terms and knowledge. The hopes is that AllTheDocs will assist new developers with their learning journey and give them the support they need to quickly produce quality applications. Hope you enjoy!
 
 ## Live Link To The App
-[AllTheDocs](https://allthedocs.herokuapp.com/)
+[AllTheDocs](https://allthedocs.audreycious.now.sh/)
 
 ## Screenshots
 ![AllTheDocs Landing Page](/images/allthedocs_homepage-view.png)
