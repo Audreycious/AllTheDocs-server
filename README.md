@@ -101,17 +101,19 @@ You MUST be logged in or send your credentials as a Bearer Token in the headers 
 
 ##### Methods:    GET, to get all the documents 
 
-##### Response body example (200): {
-                                documents: [{}, {}, ...],
-                                                            }
+##### Response body example (200): 
+        {
+            documents: [{}, {}, ...],
+                                        }
 
-##### Sample call:    fetch(url/documents, {
-                    ContentType: "application/json",
-                    headers: {
-                        Authorization: "Bearer YourBearerToken"
-                    }
-                    method : "GET"
-                }
+##### Sample call:    
+        fetch(url/documents, {
+            ContentType: "application/json",
+            headers: {
+                Authorization: "Bearer YourBearerToken"
+            }
+            method : "GET"
+        }
 
 #### POST, to search the database for documents matching the searchTerm
 
