@@ -171,13 +171,13 @@ password=[string], **required**
 This app uses **AllTheDocs** at [AllTheDocs Frontend](https://allthedocs.audreycious.now.sh/)
 
 ## Authors
-Audrey Foss - ***Project Manager***  
+Audrey Foss - **_Project Manager_**  
 [Portfolio](https://audreycious.github.io/Portfolio/)
 
-Emanuel Rouse - ***Product Manager***  
+Emanuel Rouse - **_Product Manager_**  
 [Portfolio](https://emanualrouse.github.io/Portfolio/)
 
-Ian Neville - ***Design Lead***
+Ian Neville - **_Design Lead_**
 
 ## Acknowledgments
 All - Thank you to Jose Sanchez for being our mentor and leader
