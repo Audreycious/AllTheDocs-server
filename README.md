@@ -5,8 +5,8 @@ AllTheDocs was created as a capstone project to showcase our team's ability to c
 [AllTheDocs](https://allthedocs.audreycious.now.sh/)
 
 ## Screenshots
-<img src="/images/allthedocs_homepage-view.png" width="400" height="400" >
-<img src="/images/allthedocs_search-view.png" width="400" height="400" >
+<img src="/images/allthedocs_homepage-view.png" width="550" height="400" >
+<img src="/images/allthedocs_search-view.png" width="550" height="400" >
 
 ## Summary
 This app uses a documentation server, **AllTheDocs Server**, to reply to a search term with information from MDN and React documentation *(e.g. fetch(), .concat, String)*. The app also uses the StackExchange API to give the user the top 5 results from StackOverflow; as well as, the top 5 videos from Youtube using the Youtube API. The documentation server has queries added daily and will expand into other documentations in the future. The user creates and account which logs their search history and allows them to quickly search the same term again. In the future, the user account will also store favorites so that the user can keep their top searches always available.
