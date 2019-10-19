@@ -157,7 +157,7 @@ password=[string], **required**
 ##### Response body example (400): 
         {
             error: "Username not found, please signup"
-                                                    }
+                                                        }
 
 ##### Sample call:    
         fetch(url/login, {
