@@ -1,7 +1,6 @@
 const express = require('express')
 const documentsRouter = express.Router()
 const bodyParser = express.json()
-const logger = require('../logger')
 const uuid = require('uuid/v4')
 
 
@@ -9,6 +8,7 @@ documentsRouter
     .route('/')
     .get((req, res, next) => {
         let knexInstance = req.app.get('db')
+        // return all the documents
         knexInstance
             .from('documents')
             .select('*')
